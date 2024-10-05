@@ -1,12 +1,12 @@
 #Criação de RT-Private-1a
 resource "aws_route_table" "rt_private_us_east_1a" {
   vpc_id = aws_vpc.prod_vpc.id
-  tags   = var.rt_private_us_east_1a_tag 
+  tags   = var.rt_private_tag_us_east_1a
 }
 #Criação de RT-public
 resource "aws_route_table" "rt_public_us_east_1a" {
   vpc_id = aws_vpc.prod_vpc.id  
-  tags = var.rt_public_us_east_1a_tag 
+  tags = var.rt_public_tag_us_east_1a
 }
 
  # Associação da subnet pública à tabela de roteamento pública

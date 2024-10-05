@@ -14,7 +14,7 @@ variable "eip_tags" {
   }
 }
 
-  variable "natcidrblock" {
+  variable "nat-cidr-block" {
     type = string
     description = ""
     default = "0.0.0.0/0"
